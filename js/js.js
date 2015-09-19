@@ -21,8 +21,7 @@ $(document).ready(function(){
 			$('p').text(optionName + ', Your Pix');
 			$('form').css('opacity', "1");
 
-      if (optionName == "Select a City") {
-        $('audio').trigger('play');// Imperial march theme
+      if (optionName == "Select a City") { //easter egg yum yum
         $("header").css("background","rgba(0,0,0, .0");
         $('h1').text('Darth Vader in Star Wars VII confirmed!');
         $('p').text('');
@@ -31,11 +30,9 @@ $(document).ready(function(){
         return "Are you sure you want to leave? Stay a bit for the music!";
         }
           setTimeout(function () { //delay then change img
-            $("#image").css('backgroundImage',"url('images/star_wars_episode_vii___wallpaper_by_ancoradesign-d74gh8s.png')");
+            $('video').trigger('play').css("display", "block");//trailer
             $('h1').text('');
-          }, 2000);
-      }else {
-        $('audio').trigger('pause');
+          }, 2500);
       }
     });
 
